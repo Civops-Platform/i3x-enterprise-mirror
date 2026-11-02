@@ -1,0 +1,21 @@
+{
+  "name": "@civops/i3x-enterprise-mirror",
+  "version": "1.0.0",
+  "description": "Mirrors any CESMII i3X 1.0 server into an enterprise view over plain i3X: honest quality when the uplink drops, and the gap replayed in priority order when it comes back",
+  "license": "MIT",
+  "author": "CivOps (https://civops.io)",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "keywords": ["i3x", "cesmii", "enterprise", "mirror", "replication", "multi-site", "smart-manufacturing"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}
